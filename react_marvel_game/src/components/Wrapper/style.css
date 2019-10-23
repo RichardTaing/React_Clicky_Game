@@ -1,0 +1,10 @@
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 2px;
+    max-width: 100%;
+    width: 100%;
+    margin: 0 auto;
+    align-items: center;
+    
+  }
