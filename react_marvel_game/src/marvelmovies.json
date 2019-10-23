@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "name": "Iron Man",
+    "image": "./assets/images/ironman.jpg"
+  },
+  {
+    "id": 2,
+    "name": "The Incredible Hulk",
+    "image": "./assets/images/theincrediblehulk.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Thor",
+    "image": "./assets/images/thor.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Captain America: The First Avenger",
+    "image": "./assets/images/captainamerica.jpg"
+  },
+  {
+    "id": 5,
+    "name": "The Avengers",
+    "image": "./assets/images/theavengers.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Guardians of the Galaxy",
+    "image": "./assets/images/guardiansofthegalaxy.jpg"
+  },
+  {
+    "id": 7,
+    "name": "Ant Man",
+    "image": "./assets/images/ant-man.jpg"
+  },
+  {
+    "id": 8,
+    "name": "Dr. Strange",
+    "image": "./assets/images/doctorstrange.jpg"
+  },
+  {
+    "id": 9,
+    "name": "Deadpool",
+    "image": "./assets/images/deadpool.jpg"
+  },
+  {
+    "id": 10,
+    "name": "Black Panther",
+    "image": "./assets/images/blackpanther.jpg"
+  },
+  {
+    "id": 11,
+    "name": "Captain Marvel",
+    "image": "./assets/images/captainmarvel.jpg"
+  },
+  {
+    "id": 12,
+    "name": "Spider-Man: Far From Home",
+    "image": "./assets/images/spider-manfarfromhome.jpg"
+  }
+]
