@@ -1,10 +1,11 @@
+/* .wrapper {
+  background-image: url("/react_marvel_game/public/assets/images/marvel-logo.jpg");
+} */
+
+/* .wrapper {
+  background-image: url("https://c4.wallpaperflare.com/wallpaper/269/523/701/marvel-comics-movies-marvel-heroes-iron-man-wallpaper-preview.jpg");
+} */
+
 .wrapper {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 2px;
-    max-width: 100%;
-    width: 100%;
-    margin: 0 auto;
-    align-items: center;
-    
-  }
+  background-image: url("https://data1.ibtimes.co.in/cache-img-853-362/en/full/636188/1495113872_marvel.png");
+}
