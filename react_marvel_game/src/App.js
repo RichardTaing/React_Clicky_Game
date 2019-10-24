@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import CharacterCard from "./components/MovieCards";
+import MovieCards from "./components/MovieCards";
 import Title from "./components/Title";
 import Wrapper from "./components/Wrapper";
 import movies from "./marvelmovies.json";
@@ -23,16 +23,55 @@ class App extends Component {
     clickedMovies: []
   };
 
+  clickedImage = id => {
+    let clickedMovies = this.state.clickedMovies;
+    let score = this.state.score;
+    let topScore = this.state.topScore;
+
+    if (clickedMovies.indexOf(id) === -1) {
+      clickedMovies.push(id);
+      this.handleIncrement();
+      this.movieShuffle();
+    } else if (this.state.score === 12) {
+      alert("You win!");
+      this.setState({
+        score: 0,
+        clickedMovies: []
+      });
+    } else {
+      this.setState({
+        score: 0,
+        clickedMovies: []
+      });
+      alert("Sorry you have picked the same movie twice, try again!");
+    }
+
+    if (score > topScore) {
+      topScore = score;
+      this.setState({ topScore });
+    }
+  };
+
+  // function to increment 1 point to score
+  handleIncrement = () => {
+    this.setState({ score: this.state.score + 1 });
+  };
+
+  movieShuffle = () => {
+    this.setState({ movies: shuffleImage(movies) });
+  };
+
   render() {
     return (
       <Wrapper>
         <Title> Marvel Movie Titles </Title>
         {this.state.movies.map(movie => (
-          <CharacterCard
+          <MovieCards
             id={movie.id}
             key={movie.id}
             name={movie.name}
             image={movie.image}
+            clickedImage={this.clickedImage}
           />
         ))}
       </Wrapper>
