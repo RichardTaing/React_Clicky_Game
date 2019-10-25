@@ -1,8 +1,9 @@
 .card {
   background: black;
   border-radius: n0px;
-  height: 250px;
+  height: 400px;
   box-shadow: 0px 0px 10px #999, 0px 0px 10px #999;
+  display: inline-block;
 }
 
 .card .img-container {
@@ -13,4 +14,5 @@
 
 .card .img-container > img {
   width: 100%;
+  height: 100%;
 }

@@ -64,7 +64,10 @@ class App extends Component {
   render() {
     return (
       <Wrapper>
-        <Title> Marvel Movie Titles </Title>
+        <Title score={this.state.score} topScore={this.state.topScore}>
+          {" "}
+          Marvel Movie Titles{" "}
+        </Title>
         {this.state.movies.map(movie => (
           <MovieCards
             id={movie.id}
