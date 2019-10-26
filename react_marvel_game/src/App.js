@@ -15,6 +15,7 @@ function shuffleImage(array) {
   }
   return array;
 }
+
 class App extends Component {
   state = {
     movies,
@@ -64,19 +65,24 @@ class App extends Component {
   render() {
     return (
       <Wrapper>
-        <Title score={this.state.score} topScore={this.state.topScore}>
-          {" "}
-          Marvel Movie Titles{" "}
-        </Title>
-        {this.state.movies.map(movie => (
-          <MovieCards
-            id={movie.id}
-            key={movie.id}
-            name={movie.name}
-            image={movie.image}
-            clickedImage={this.clickedImage}
-          />
-        ))}
+        <Title
+          score={this.state.score}
+          message={this.state.message}
+          topScore={this.state.topScore}
+        />
+        <div class="container">
+          <div class="row">
+            {this.state.movies.map(movie => (
+              <MovieCards
+                id={movie.id}
+                key={movie.id}
+                name={movie.name}
+                image={movie.image}
+                clickedImage={this.clickedImage}
+              />
+            ))}
+          </div>
+        </div>
       </Wrapper>
     );
   }
