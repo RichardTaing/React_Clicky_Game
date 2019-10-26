@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import MovieCards from "./components/MovieCards";
 import Title from "./components/Title";
 import Wrapper from "./components/Wrapper";
-import movies from "./marvelmovies.json.js";
+import movies from "./marvelmovies.json";
 import "./App.css";
 
 // function to shuffle array of images
